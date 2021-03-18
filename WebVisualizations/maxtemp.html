@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color:rgb(226, 225, 225)}
+  </style>
+</head>
+
+
+<body>
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Lattitude</a>
+                  </div>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Container -->
+    <div class="container">
+        <!--<div class="row">-->
+      <div class="row">
+        <div class="col-lg-8 col-sm-12">
+          <h1>Maximum Temperature</h1>
+          <hr>
+          <img src="assets/Max-Temp_vs_Latitude.png" alt="maxtemp" height="400" width="600" align="center">
+          <p>This scatter plot shows that there is a relationship between latitude and temprature. The temprature rises as we move towards the equator(latitude(0)) and is generally lower in the northern hemisphere (latitude(>0) compared to the southern hemisphere(latitude(<0)).
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h2>Visualizations</h2>
+          <hr>
+              <div class= "col-md-6 col-sm-3">
+                <a href="maxtemp.html">
+                  <img id ="pic1" src="assets/Max-Temp_vs_Latitude.png" alt="maxtemp" height="150" width="150">
+                </a> 
+              </div> 
+              <div class= "col-md-6 col-sm-3">
+                <a href="humidity.html">
+                  <img id ="pic2" src="assets/Humidity_vs_Latitude.png" alt="humidity" height="150" width="150">
+                </a>
+              </div> 
+              <div class= "col-md-6 col-sm-3">
+                <a href="cloudiness.html">
+                  <img id = "pic3" src="assets/Cloudiness_vs_Latitude.png" alt="cloudiness" height="150" width="150">
+                </a>
+              </div> 
+              <div class= "col-md-6 col-sm-3">
+                <a href="windspeed.html">
+                  <img id = "pic4" src="assets/Wind_Speed_vs_Latitude.png" alt="windspeed" height="150" width="150">
+                </a>
+              </div> 
+      </div>
+        
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>   
+  
